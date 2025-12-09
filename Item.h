@@ -20,7 +20,7 @@ public:
 
     std::string getName();
     int getID();
-    Status getStatus();
+    Status getStatus() const;
 
     void setDueDate(Calender& cal);
     int getDueDate();
