@@ -5,7 +5,7 @@ Item::Item(std::string n, int i, Status s)
 
 std::string Item::getName() { return name; }
 int Item::getID() { return id; }
-Item::Status Item::getStatus() { return status; }
+Item::Status Item::getStatus() const { return status; }
 
 void Item::setDueDate(Calender& cal) {
     due_date = cal.getDue_Date();
